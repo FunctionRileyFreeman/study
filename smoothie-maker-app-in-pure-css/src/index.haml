@@ -1,0 +1,108 @@
+.smoothie
+    .smoothie_header
+        .smoothie_header__left
+            %i.ion-navicon
+        .smoothie_header__mid
+            %h1 Smoothie Maker
+        .smoothie_header__right
+            %i.ion-plus
+    .smoothie_content
+        .loader
+            %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/smoothieloader.png'}
+            %div Loading smoothie maker
+        %input{:id => 'intro', :type => 'checkbox'}
+        %label.intro_page{:for => 'intro'}
+            .button Let's get blending
+            .glyph
+                //%img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/whirl2.png'}
+        .page
+            .intro_animation
+                .circle
+                .blender
+                   
+                .straw
+                    %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_strawberry.png'}
+                .orange
+                    %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_orange.png'}
+                .apple
+                    %img{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_apple.png'}
+            %h2 CSS only Smoothie Maker
+            %h3 Select the fruit or vegetables you want in your smoothie and we’ll make it for you! Made entirely in CSS by <a href="https://codepen.io/jcoulterdesign" target='_blank'>Jamie Coulter</a> for Codepen!
+            %img.whirly{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/whirl1.png'}
+            %ul
+                %li Lots of good fruits
+                %li Some pretty decent vegetables
+                %li Bespoke smoothie blendage
+                %li Free delivery
+        
+        .page_two 
+            %h2 Select your ingredients!
+            %h3 There's lots of yummy fruit & veg to add to your smoothie. Select them from below!
+            %input{:id => 'blend', :type => 'checkbox'}
+            %label.blend_page{:for => 'blend'}
+                .blendit
+                    Blend it!
+            .the_blend
+                %h1 SUPER YUMMY!
+                %img.spin{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/the_blend.png'}
+            %h4 Select from these popular fruits & veg
+            .selection
+                .row
+                    %input{:id => 'apple', :type => 'checkbox'}
+                    %label.apple{:for => 'apple'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_apple.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_apple.png'}
+                        %div Apple
+                        %i.ion-checkmark-round
+                    %input{:id => 'carrot', :type => 'checkbox'}
+                    %label.carrot{:for => 'carrot'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/carrot.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/carrot.png'}
+                        %div Carrot
+                        %i.ion-checkmark-round
+                    %input{:id => 'orange', :type => 'checkbox'}
+                    %label.orange{:for => 'orange'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_orange.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_orange.png'}
+                        %div Orange
+                        %i.ion-checkmark-round
+                    %input{:id => 'cherry', :type => 'checkbox'}
+                    %label.cherry{:for => 'cherry'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cherry.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cherry.png'}
+                        %div Cherry
+                        %i.ion-checkmark-round
+                .row
+                    %input{:id => 'peach', :type => 'checkbox'}
+                    %label.peach{:for => 'peach'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/peach.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/peach.png'}
+                        %div Peach
+                        %i.ion-checkmark-round
+                    %input{:id => 'melon', :type => 'checkbox'}
+                    %label.melon{:for => 'melon'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/melon.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/melon.png'}
+                        %div Melon
+                        %i.ion-checkmark-round
+                    %input{:id => 'pear', :type => 'checkbox'}
+                    %label.pear{:for => 'pear'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pear.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pear.png'}
+                        %div Pear
+                        %i.ion-checkmark-round
+                    %input{:id => 'straw', :type => 'checkbox'}
+                    %label.straw{:for => 'straw'}
+                        %img.original{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_strawberry.png'}
+                        %img.clone{:src => 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/intro_strawberry.png'}
+                        %div Strawberry
+                        %i.ion-checkmark-round
+            .complete
+                .complete_overlay
+                .complete_inner
+
+                    %h2 Smoothie success!
+                    %h3 Your tasty smoothie is ready and on its way!
+                    %a{:href => 'https://codepen.io/jcoulterdesign', :target => '_blank'} Follow me on Codepen
+                    
+                    
